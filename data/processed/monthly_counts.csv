@@ -1,0 +1,1011 @@
+month,country_group,gender,n
+2015-01-01,El Salvador,F,18
+2015-01-01,El Salvador,M,36
+2015-01-01,Guatemala,F,59
+2015-01-01,Guatemala,M,141
+2015-01-01,Honduras,F,16
+2015-01-01,Honduras,M,30
+2015-01-01,Mexico,F,6
+2015-01-01,Mexico,M,12
+2015-01-01,Other,F,7
+2015-01-01,Other,M,9
+2015-02-01,El Salvador,F,93
+2015-02-01,El Salvador,M,161
+2015-02-01,Guatemala,F,142
+2015-02-01,Guatemala,M,490
+2015-02-01,Honduras,F,68
+2015-02-01,Honduras,M,93
+2015-02-01,Mexico,F,24
+2015-02-01,Mexico,M,29
+2015-02-01,Other,F,17
+2015-02-01,Other,M,32
+2015-03-01,El Salvador,F,169
+2015-03-01,El Salvador,M,326
+2015-03-01,Guatemala,F,212
+2015-03-01,Guatemala,M,685
+2015-03-01,Honduras,F,110
+2015-03-01,Honduras,M,152
+2015-03-01,Mexico,F,36
+2015-03-01,Mexico,M,37
+2015-03-01,Other,F,13
+2015-03-01,Other,M,44
+2015-04-01,El Salvador,F,212
+2015-04-01,El Salvador,M,368
+2015-04-01,Guatemala,F,238
+2015-04-01,Guatemala,M,739
+2015-04-01,Honduras,F,135
+2015-04-01,Honduras,M,227
+2015-04-01,Mexico,F,29
+2015-04-01,Mexico,M,44
+2015-04-01,Other,F,11
+2015-04-01,Other,M,23
+2015-05-01,El Salvador,F,277
+2015-05-01,El Salvador,M,484
+2015-05-01,Guatemala,F,310
+2015-05-01,Guatemala,M,928
+2015-05-01,Honduras,F,174
+2015-05-01,Honduras,M,283
+2015-05-01,Mexico,F,32
+2015-05-01,Mexico,M,40
+2015-05-01,Other,F,14
+2015-05-01,Other,M,32
+2015-06-01,El Salvador,F,297
+2015-06-01,El Salvador,M,545
+2015-06-01,Guatemala,F,354
+2015-06-01,Guatemala,M,881
+2015-06-01,Honduras,F,158
+2015-06-01,Honduras,M,297
+2015-06-01,Mexico,F,31
+2015-06-01,Mexico,M,46
+2015-06-01,Other,F,11
+2015-06-01,Other,M,40
+2015-07-01,El Salvador,F,368
+2015-07-01,El Salvador,M,618
+2015-07-01,Guatemala,F,361
+2015-07-01,Guatemala,M,938
+2015-07-01,Honduras,F,207
+2015-07-01,Honduras,M,375
+2015-07-01,Mexico,F,30
+2015-07-01,Mexico,M,60
+2015-07-01,Other,F,15
+2015-07-01,Other,M,33
+2015-08-01,El Salvador,F,406
+2015-08-01,El Salvador,M,642
+2015-08-01,Guatemala,F,380
+2015-08-01,Guatemala,M,1054
+2015-08-01,Honduras,F,266
+2015-08-01,Honduras,M,369
+2015-08-01,Mexico,F,43
+2015-08-01,Mexico,M,53
+2015-08-01,Other,F,16
+2015-08-01,Other,M,43
+2015-09-01,El Salvador,F,555
+2015-09-01,El Salvador,M,875
+2015-09-01,Guatemala,F,405
+2015-09-01,Guatemala,M,1178
+2015-09-01,Honduras,F,295
+2015-09-01,Honduras,M,481
+2015-09-01,Mexico,F,58
+2015-09-01,Mexico,M,75
+2015-09-01,Other,F,25
+2015-09-01,Other,M,58
+2015-10-01,El Salvador,F,618
+2015-10-01,El Salvador,M,1068
+2015-10-01,Guatemala,F,440
+2015-10-01,Guatemala,M,1122
+2015-10-01,Honduras,F,334
+2015-10-01,Honduras,M,530
+2015-10-01,Mexico,F,40
+2015-10-01,Mexico,M,66
+2015-10-01,Other,F,19
+2015-10-01,Other,M,58
+2015-11-01,El Salvador,F,604
+2015-11-01,El Salvador,M,895
+2015-11-01,Guatemala,F,434
+2015-11-01,Guatemala,M,1189
+2015-11-01,Honduras,F,281
+2015-11-01,Honduras,M,434
+2015-11-01,Mexico,F,49
+2015-11-01,Mexico,M,68
+2015-11-01,Other,F,22
+2015-11-01,Other,M,62
+2015-12-01,El Salvador,F,856
+2015-12-01,El Salvador,M,1244
+2015-12-01,Guatemala,F,824
+2015-12-01,Guatemala,M,1941
+2015-12-01,Honduras,F,517
+2015-12-01,Honduras,M,744
+2015-12-01,Mexico,F,74
+2015-12-01,Mexico,M,86
+2015-12-01,Other,F,33
+2015-12-01,Other,M,85
+2016-01-01,El Salvador,F,625
+2016-01-01,El Salvador,M,813
+2016-01-01,Guatemala,F,620
+2016-01-01,Guatemala,M,1739
+2016-01-01,Honduras,F,337
+2016-01-01,Honduras,M,548
+2016-01-01,Mexico,F,56
+2016-01-01,Mexico,M,57
+2016-01-01,Other,F,36
+2016-01-01,Other,M,79
+2016-02-01,El Salvador,F,388
+2016-02-01,El Salvador,M,664
+2016-02-01,Guatemala,F,376
+2016-02-01,Guatemala,M,1213
+2016-02-01,Honduras,F,201
+2016-02-01,Honduras,M,315
+2016-02-01,Mexico,F,46
+2016-02-01,Mexico,M,52
+2016-02-01,Other,F,28
+2016-02-01,Other,M,55
+2016-03-01,El Salvador,F,406
+2016-03-01,El Salvador,M,704
+2016-03-01,Guatemala,F,267
+2016-03-01,Guatemala,M,1006
+2016-03-01,Honduras,F,205
+2016-03-01,Honduras,M,367
+2016-03-01,Mexico,F,59
+2016-03-01,Mexico,M,68
+2016-03-01,Other,F,22
+2016-03-01,Other,M,87
+2016-04-01,El Salvador,F,505
+2016-04-01,El Salvador,M,860
+2016-04-01,Guatemala,F,283
+2016-04-01,Guatemala,M,858
+2016-04-01,Honduras,F,210
+2016-04-01,Honduras,M,405
+2016-04-01,Mexico,F,41
+2016-04-01,Mexico,M,56
+2016-04-01,Other,F,19
+2016-04-01,Other,M,49
+2016-05-01,El Salvador,F,663
+2016-05-01,El Salvador,M,1067
+2016-05-01,Guatemala,F,363
+2016-05-01,Guatemala,M,983
+2016-05-01,Honduras,F,328
+2016-05-01,Honduras,M,536
+2016-05-01,Mexico,F,47
+2016-05-01,Mexico,M,53
+2016-05-01,Other,F,25
+2016-05-01,Other,M,64
+2016-06-01,El Salvador,F,642
+2016-06-01,El Salvador,M,1019
+2016-06-01,Guatemala,F,414
+2016-06-01,Guatemala,M,1065
+2016-06-01,Honduras,F,335
+2016-06-01,Honduras,M,594
+2016-06-01,Mexico,F,39
+2016-06-01,Mexico,M,41
+2016-06-01,Other,F,22
+2016-06-01,Other,M,79
+2016-07-01,El Salvador,F,581
+2016-07-01,El Salvador,M,1045
+2016-07-01,Guatemala,F,432
+2016-07-01,Guatemala,M,1196
+2016-07-01,Honduras,F,342
+2016-07-01,Honduras,M,644
+2016-07-01,Mexico,F,51
+2016-07-01,Mexico,M,52
+2016-07-01,Other,F,23
+2016-07-01,Other,M,74
+2016-08-01,El Salvador,F,686
+2016-08-01,El Salvador,M,1095
+2016-08-01,Guatemala,F,444
+2016-08-01,Guatemala,M,1357
+2016-08-01,Honduras,F,419
+2016-08-01,Honduras,M,717
+2016-08-01,Mexico,F,51
+2016-08-01,Mexico,M,79
+2016-08-01,Other,F,42
+2016-08-01,Other,M,70
+2016-09-01,El Salvador,F,680
+2016-09-01,El Salvador,M,1060
+2016-09-01,Guatemala,F,487
+2016-09-01,Guatemala,M,1380
+2016-09-01,Honduras,F,438
+2016-09-01,Honduras,M,815
+2016-09-01,Mexico,F,49
+2016-09-01,Mexico,M,68
+2016-09-01,Other,F,33
+2016-09-01,Other,M,77
+2016-10-01,El Salvador,F,803
+2016-10-01,El Salvador,M,1318
+2016-10-01,Guatemala,F,605
+2016-10-01,Guatemala,M,1683
+2016-10-01,Honduras,F,466
+2016-10-01,Honduras,M,883
+2016-10-01,Mexico,F,72
+2016-10-01,Mexico,M,80
+2016-10-01,Other,F,45
+2016-10-01,Other,M,84
+2016-11-01,El Salvador,F,888
+2016-11-01,El Salvador,M,1324
+2016-11-01,Guatemala,F,732
+2016-11-01,Guatemala,M,1938
+2016-11-01,Honduras,F,568
+2016-11-01,Honduras,M,954
+2016-11-01,Mexico,F,47
+2016-11-01,Mexico,M,72
+2016-11-01,Other,F,32
+2016-11-01,Other,M,81
+2016-12-01,El Salvador,F,978
+2016-12-01,El Salvador,M,1482
+2016-12-01,Guatemala,F,887
+2016-12-01,Guatemala,M,2263
+2016-12-01,Honduras,F,738
+2016-12-01,Honduras,M,1100
+2016-12-01,Mexico,F,66
+2016-12-01,Mexico,M,91
+2016-12-01,Other,F,47
+2016-12-01,Other,M,91
+2017-01-01,El Salvador,F,778
+2017-01-01,El Salvador,M,1261
+2017-01-01,Guatemala,F,730
+2017-01-01,Guatemala,M,2114
+2017-01-01,Honduras,F,500
+2017-01-01,Honduras,M,966
+2017-01-01,Mexico,F,36
+2017-01-01,Mexico,M,70
+2017-01-01,Other,F,40
+2017-01-01,Other,M,76
+2017-02-01,El Salvador,F,569
+2017-02-01,El Salvador,M,845
+2017-02-01,Guatemala,F,467
+2017-02-01,Guatemala,M,1454
+2017-02-01,Honduras,F,339
+2017-02-01,Honduras,M,665
+2017-02-01,Mexico,F,26
+2017-02-01,Mexico,M,41
+2017-02-01,Other,F,36
+2017-02-01,Other,M,73
+2017-03-01,El Salvador,F,305
+2017-03-01,El Salvador,M,580
+2017-03-01,Guatemala,F,256
+2017-03-01,Guatemala,M,960
+2017-03-01,Honduras,F,241
+2017-03-01,Honduras,M,417
+2017-03-01,Mexico,F,28
+2017-03-01,Mexico,M,34
+2017-03-01,Other,F,25
+2017-03-01,Other,M,81
+2017-04-01,El Salvador,F,97
+2017-04-01,El Salvador,M,173
+2017-04-01,Guatemala,F,105
+2017-04-01,Guatemala,M,334
+2017-04-01,Honduras,F,105
+2017-04-01,Honduras,M,181
+2017-04-01,Mexico,F,10
+2017-04-01,Mexico,M,17
+2017-04-01,Other,F,17
+2017-04-01,Other,M,51
+2017-05-01,El Salvador,F,115
+2017-05-01,El Salvador,M,143
+2017-05-01,Guatemala,F,118
+2017-05-01,Guatemala,M,293
+2017-05-01,Honduras,F,85
+2017-05-01,Honduras,M,140
+2017-05-01,Mexico,F,9
+2017-05-01,Mexico,M,19
+2017-05-01,Other,F,14
+2017-05-01,Other,M,41
+2017-06-01,El Salvador,F,122
+2017-06-01,El Salvador,M,177
+2017-06-01,Guatemala,F,150
+2017-06-01,Guatemala,M,400
+2017-06-01,Honduras,F,107
+2017-06-01,Honduras,M,172
+2017-06-01,Mexico,F,16
+2017-06-01,Mexico,M,32
+2017-06-01,Other,F,11
+2017-06-01,Other,M,28
+2017-07-01,El Salvador,F,111
+2017-07-01,El Salvador,M,176
+2017-07-01,Guatemala,F,180
+2017-07-01,Guatemala,M,497
+2017-07-01,Honduras,F,101
+2017-07-01,Honduras,M,171
+2017-07-01,Mexico,F,9
+2017-07-01,Mexico,M,19
+2017-07-01,Other,F,8
+2017-07-01,Other,M,42
+2017-08-01,El Salvador,F,121
+2017-08-01,El Salvador,M,177
+2017-08-01,Guatemala,F,222
+2017-08-01,Guatemala,M,631
+2017-08-01,Honduras,F,120
+2017-08-01,Honduras,M,221
+2017-08-01,Mexico,F,22
+2017-08-01,Mexico,M,40
+2017-08-01,Other,F,6
+2017-08-01,Other,M,40
+2017-09-01,El Salvador,F,132
+2017-09-01,El Salvador,M,192
+2017-09-01,Guatemala,F,275
+2017-09-01,Guatemala,M,810
+2017-09-01,Honduras,F,131
+2017-09-01,Honduras,M,259
+2017-09-01,Mexico,F,35
+2017-09-01,Mexico,M,36
+2017-09-01,Other,F,18
+2017-09-01,Other,M,75
+2017-10-01,El Salvador,F,127
+2017-10-01,El Salvador,M,209
+2017-10-01,Guatemala,F,294
+2017-10-01,Guatemala,M,961
+2017-10-01,Honduras,F,141
+2017-10-01,Honduras,M,327
+2017-10-01,Mexico,F,29
+2017-10-01,Mexico,M,43
+2017-10-01,Other,F,17
+2017-10-01,Other,M,82
+2017-11-01,El Salvador,F,146
+2017-11-01,El Salvador,M,214
+2017-11-01,Guatemala,F,331
+2017-11-01,Guatemala,M,936
+2017-11-01,Honduras,F,148
+2017-11-01,Honduras,M,312
+2017-11-01,Mexico,F,27
+2017-11-01,Mexico,M,22
+2017-11-01,Other,F,20
+2017-11-01,Other,M,85
+2017-12-01,El Salvador,F,173
+2017-12-01,El Salvador,M,274
+2017-12-01,Guatemala,F,494
+2017-12-01,Guatemala,M,1390
+2017-12-01,Honduras,F,221
+2017-12-01,Honduras,M,406
+2017-12-01,Mexico,F,46
+2017-12-01,Mexico,M,50
+2017-12-01,Other,F,18
+2017-12-01,Other,M,115
+2018-01-01,El Salvador,F,115
+2018-01-01,El Salvador,M,199
+2018-01-01,Guatemala,F,474
+2018-01-01,Guatemala,M,1262
+2018-01-01,Honduras,F,168
+2018-01-01,Honduras,M,301
+2018-01-01,Mexico,F,41
+2018-01-01,Mexico,M,41
+2018-01-01,Other,F,22
+2018-01-01,Other,M,84
+2018-02-01,El Salvador,F,112
+2018-02-01,El Salvador,M,174
+2018-02-01,Guatemala,F,414
+2018-02-01,Guatemala,M,1438
+2018-02-01,Honduras,F,222
+2018-02-01,Honduras,M,365
+2018-02-01,Mexico,F,42
+2018-02-01,Mexico,M,44
+2018-02-01,Other,F,10
+2018-02-01,Other,M,99
+2018-03-01,El Salvador,F,100
+2018-03-01,El Salvador,M,157
+2018-03-01,Guatemala,F,479
+2018-03-01,Guatemala,M,1516
+2018-03-01,Honduras,F,223
+2018-03-01,Honduras,M,407
+2018-03-01,Mexico,F,52
+2018-03-01,Mexico,M,49
+2018-03-01,Other,F,12
+2018-03-01,Other,M,80
+2018-04-01,El Salvador,F,163
+2018-04-01,El Salvador,M,221
+2018-04-01,Guatemala,F,458
+2018-04-01,Guatemala,M,1543
+2018-04-01,Honduras,F,287
+2018-04-01,Honduras,M,582
+2018-04-01,Mexico,F,53
+2018-04-01,Mexico,M,67
+2018-04-01,Other,F,20
+2018-04-01,Other,M,85
+2018-05-01,El Salvador,F,168
+2018-05-01,El Salvador,M,310
+2018-05-01,Guatemala,F,475
+2018-05-01,Guatemala,M,1683
+2018-05-01,Honduras,F,343
+2018-05-01,Honduras,M,686
+2018-05-01,Mexico,F,60
+2018-05-01,Mexico,M,72
+2018-05-01,Other,F,24
+2018-05-01,Other,M,99
+2018-06-01,El Salvador,F,166
+2018-06-01,El Salvador,M,322
+2018-06-01,Guatemala,F,485
+2018-06-01,Guatemala,M,1533
+2018-06-01,Honduras,F,357
+2018-06-01,Honduras,M,763
+2018-06-01,Mexico,F,35
+2018-06-01,Mexico,M,64
+2018-06-01,Other,F,21
+2018-06-01,Other,M,116
+2018-07-01,El Salvador,F,108
+2018-07-01,El Salvador,M,189
+2018-07-01,Guatemala,F,340
+2018-07-01,Guatemala,M,960
+2018-07-01,Honduras,F,274
+2018-07-01,Honduras,M,501
+2018-07-01,Mexico,F,23
+2018-07-01,Mexico,M,30
+2018-07-01,Other,F,23
+2018-07-01,Other,M,97
+2018-08-01,El Salvador,F,104
+2018-08-01,El Salvador,M,205
+2018-08-01,Guatemala,F,245
+2018-08-01,Guatemala,M,830
+2018-08-01,Honduras,F,220
+2018-08-01,Honduras,M,444
+2018-08-01,Mexico,F,21
+2018-08-01,Mexico,M,35
+2018-08-01,Other,F,17
+2018-08-01,Other,M,66
+2018-09-01,El Salvador,F,159
+2018-09-01,El Salvador,M,232
+2018-09-01,Guatemala,F,362
+2018-09-01,Guatemala,M,984
+2018-09-01,Honduras,F,256
+2018-09-01,Honduras,M,518
+2018-09-01,Mexico,F,31
+2018-09-01,Mexico,M,39
+2018-09-01,Other,F,24
+2018-09-01,Other,M,114
+2018-10-01,El Salvador,F,205
+2018-10-01,El Salvador,M,326
+2018-10-01,Guatemala,F,428
+2018-10-01,Guatemala,M,1207
+2018-10-01,Honduras,F,338
+2018-10-01,Honduras,M,685
+2018-10-01,Mexico,F,31
+2018-10-01,Mexico,M,66
+2018-10-01,Other,F,40
+2018-10-01,Other,M,148
+2018-11-01,El Salvador,F,206
+2018-11-01,El Salvador,M,322
+2018-11-01,Guatemala,F,461
+2018-11-01,Guatemala,M,1156
+2018-11-01,Honduras,F,321
+2018-11-01,Honduras,M,686
+2018-11-01,Mexico,F,37
+2018-11-01,Mexico,M,70
+2018-11-01,Other,F,34
+2018-11-01,Other,M,117
+2018-12-01,El Salvador,F,373
+2018-12-01,El Salvador,M,632
+2018-12-01,Guatemala,F,841
+2018-12-01,Guatemala,M,2085
+2018-12-01,Honduras,F,649
+2018-12-01,Honduras,M,1063
+2018-12-01,Mexico,F,73
+2018-12-01,Mexico,M,79
+2018-12-01,Other,F,50
+2018-12-01,Other,M,185
+2019-01-01,El Salvador,F,280
+2019-01-01,El Salvador,M,445
+2019-01-01,Guatemala,F,800
+2019-01-01,Guatemala,M,2321
+2019-01-01,Honduras,F,506
+2019-01-01,Honduras,M,940
+2019-01-01,Mexico,F,42
+2019-01-01,Mexico,M,63
+2019-01-01,Other,F,43
+2019-01-01,Other,M,161
+2019-02-01,El Salvador,F,249
+2019-02-01,El Salvador,M,413
+2019-02-01,Guatemala,F,815
+2019-02-01,Guatemala,M,2045
+2019-02-01,Honduras,F,508
+2019-02-01,Honduras,M,957
+2019-02-01,Mexico,F,57
+2019-02-01,Mexico,M,45
+2019-02-01,Other,F,47
+2019-02-01,Other,M,158
+2019-03-01,El Salvador,F,386
+2019-03-01,El Salvador,M,634
+2019-03-01,Guatemala,F,1002
+2019-03-01,Guatemala,M,2555
+2019-03-01,Honduras,F,683
+2019-03-01,Honduras,M,1295
+2019-03-01,Mexico,F,50
+2019-03-01,Mexico,M,62
+2019-03-01,Other,F,70
+2019-03-01,Other,M,172
+2019-04-01,El Salvador,F,524
+2019-04-01,El Salvador,M,773
+2019-04-01,Guatemala,F,1089
+2019-04-01,Guatemala,M,2695
+2019-04-01,Honduras,F,852
+2019-04-01,Honduras,M,1448
+2019-04-01,Mexico,F,35
+2019-04-01,Mexico,M,55
+2019-04-01,Other,F,99
+2019-04-01,Other,M,199
+2019-05-01,El Salvador,F,643
+2019-05-01,El Salvador,M,962
+2019-05-01,Guatemala,F,1092
+2019-05-01,Guatemala,M,2538
+2019-05-01,Honduras,F,856
+2019-05-01,Honduras,M,1628
+2019-05-01,Mexico,F,42
+2019-05-01,Mexico,M,48
+2019-05-01,Other,F,124
+2019-05-01,Other,M,190
+2019-06-01,El Salvador,F,697
+2019-06-01,El Salvador,M,1126
+2019-06-01,Guatemala,F,1109
+2019-06-01,Guatemala,M,2838
+2019-06-01,Honduras,F,884
+2019-06-01,Honduras,M,1662
+2019-06-01,Mexico,F,39
+2019-06-01,Mexico,M,67
+2019-06-01,Other,F,117
+2019-06-01,Other,M,210
+2019-07-01,El Salvador,F,740
+2019-07-01,El Salvador,M,1156
+2019-07-01,Guatemala,F,1053
+2019-07-01,Guatemala,M,2390
+2019-07-01,Honduras,F,947
+2019-07-01,Honduras,M,1684
+2019-07-01,Mexico,F,46
+2019-07-01,Mexico,M,56
+2019-07-01,Other,F,151
+2019-07-01,Other,M,263
+2019-08-01,El Salvador,F,476
+2019-08-01,El Salvador,M,765
+2019-08-01,Guatemala,F,602
+2019-08-01,Guatemala,M,1359
+2019-08-01,Honduras,F,713
+2019-08-01,Honduras,M,1202
+2019-08-01,Mexico,F,62
+2019-08-01,Mexico,M,75
+2019-08-01,Other,F,163
+2019-08-01,Other,M,247
+2019-09-01,El Salvador,F,289
+2019-09-01,El Salvador,M,425
+2019-09-01,Guatemala,F,409
+2019-09-01,Guatemala,M,828
+2019-09-01,Honduras,F,435
+2019-09-01,Honduras,M,721
+2019-09-01,Mexico,F,57
+2019-09-01,Mexico,M,64
+2019-09-01,Other,F,110
+2019-09-01,Other,M,203
+2019-10-01,El Salvador,F,193
+2019-10-01,El Salvador,M,293
+2019-10-01,Guatemala,F,278
+2019-10-01,Guatemala,M,666
+2019-10-01,Honduras,F,318
+2019-10-01,Honduras,M,553
+2019-10-01,Mexico,F,61
+2019-10-01,Mexico,M,87
+2019-10-01,Other,F,121
+2019-10-01,Other,M,232
+2019-11-01,El Salvador,F,140
+2019-11-01,El Salvador,M,217
+2019-11-01,Guatemala,F,292
+2019-11-01,Guatemala,M,716
+2019-11-01,Honduras,F,247
+2019-11-01,Honduras,M,423
+2019-11-01,Mexico,F,38
+2019-11-01,Mexico,M,63
+2019-11-01,Other,F,57
+2019-11-01,Other,M,149
+2019-12-01,El Salvador,F,135
+2019-12-01,El Salvador,M,204
+2019-12-01,Guatemala,F,328
+2019-12-01,Guatemala,M,882
+2019-12-01,Honduras,F,217
+2019-12-01,Honduras,M,393
+2019-12-01,Mexico,F,48
+2019-12-01,Mexico,M,72
+2019-12-01,Other,F,65
+2019-12-01,Other,M,139
+2020-01-01,El Salvador,F,108
+2020-01-01,El Salvador,M,146
+2020-01-01,Guatemala,F,274
+2020-01-01,Guatemala,M,771
+2020-01-01,Honduras,F,181
+2020-01-01,Honduras,M,333
+2020-01-01,Mexico,F,50
+2020-01-01,Mexico,M,76
+2020-01-01,Other,F,58
+2020-01-01,Other,M,118
+2020-02-01,El Salvador,F,126
+2020-02-01,El Salvador,M,170
+2020-02-01,Guatemala,F,287
+2020-02-01,Guatemala,M,845
+2020-02-01,Honduras,F,160
+2020-02-01,Honduras,M,276
+2020-02-01,Mexico,F,44
+2020-02-01,Mexico,M,72
+2020-02-01,Other,F,51
+2020-02-01,Other,M,102
+2020-03-01,El Salvador,F,110
+2020-03-01,El Salvador,M,170
+2020-03-01,Guatemala,F,279
+2020-03-01,Guatemala,M,810
+2020-03-01,Honduras,F,181
+2020-03-01,Honduras,M,334
+2020-03-01,Mexico,F,35
+2020-03-01,Mexico,M,71
+2020-03-01,Other,F,55
+2020-03-01,Other,M,103
+2020-04-01,El Salvador,F,66
+2020-04-01,El Salvador,M,126
+2020-04-01,Guatemala,F,154
+2020-04-01,Guatemala,M,478
+2020-04-01,Honduras,F,106
+2020-04-01,Honduras,M,198
+2020-04-01,Mexico,F,24
+2020-04-01,Mexico,M,49
+2020-04-01,Other,F,31
+2020-04-01,Other,M,72
+2020-05-01,El Salvador,F,31
+2020-05-01,El Salvador,M,35
+2020-05-01,Guatemala,F,55
+2020-05-01,Guatemala,M,169
+2020-05-01,Honduras,F,51
+2020-05-01,Honduras,M,83
+2020-05-01,Mexico,F,13
+2020-05-01,Mexico,M,18
+2020-05-01,Other,F,17
+2020-05-01,Other,M,50
+2020-06-01,El Salvador,F,14
+2020-06-01,El Salvador,M,17
+2020-06-01,Guatemala,F,24
+2020-06-01,Guatemala,M,63
+2020-06-01,Honduras,F,25
+2020-06-01,Honduras,M,43
+2020-06-01,Mexico,F,6
+2020-06-01,Mexico,M,7
+2020-06-01,Other,F,11
+2020-06-01,Other,M,31
+2020-07-01,El Salvador,F,5
+2020-07-01,El Salvador,M,6
+2020-07-01,Guatemala,F,12
+2020-07-01,Guatemala,M,52
+2020-07-01,Honduras,F,26
+2020-07-01,Honduras,M,29
+2020-07-01,Mexico,F,2
+2020-07-01,Mexico,M,8
+2020-07-01,Other,F,13
+2020-07-01,Other,M,19
+2020-08-01,El Salvador,F,16
+2020-08-01,El Salvador,M,12
+2020-08-01,Guatemala,F,15
+2020-08-01,Guatemala,M,46
+2020-08-01,Honduras,F,32
+2020-08-01,Honduras,M,33
+2020-08-01,Mexico,F,7
+2020-08-01,Mexico,M,3
+2020-08-01,Other,F,13
+2020-08-01,Other,M,8
+2020-09-01,El Salvador,F,27
+2020-09-01,El Salvador,M,36
+2020-09-01,Guatemala,F,36
+2020-09-01,Guatemala,M,103
+2020-09-01,Honduras,F,57
+2020-09-01,Honduras,M,89
+2020-09-01,Mexico,F,7
+2020-09-01,Mexico,M,11
+2020-09-01,Other,F,23
+2020-09-01,Other,M,29
+2020-10-01,El Salvador,F,58
+2020-10-01,El Salvador,M,101
+2020-10-01,Guatemala,F,124
+2020-10-01,Guatemala,M,332
+2020-10-01,Honduras,F,132
+2020-10-01,Honduras,M,203
+2020-10-01,Mexico,F,11
+2020-10-01,Mexico,M,14
+2020-10-01,Other,F,37
+2020-10-01,Other,M,50
+2020-11-01,El Salvador,F,74
+2020-11-01,El Salvador,M,97
+2020-11-01,Guatemala,F,119
+2020-11-01,Guatemala,M,384
+2020-11-01,Honduras,F,155
+2020-11-01,Honduras,M,268
+2020-11-01,Mexico,F,6
+2020-11-01,Mexico,M,15
+2020-11-01,Other,F,44
+2020-11-01,Other,M,64
+2020-12-01,El Salvador,F,126
+2020-12-01,El Salvador,M,187
+2020-12-01,Guatemala,F,307
+2020-12-01,Guatemala,M,718
+2020-12-01,Honduras,F,240
+2020-12-01,Honduras,M,437
+2020-12-01,Mexico,F,17
+2020-12-01,Mexico,M,27
+2020-12-01,Other,F,92
+2020-12-01,Other,M,148
+2021-01-01,El Salvador,F,106
+2021-01-01,El Salvador,M,180
+2021-01-01,Guatemala,F,321
+2021-01-01,Guatemala,M,966
+2021-01-01,Honduras,F,285
+2021-01-01,Honduras,M,505
+2021-01-01,Mexico,F,15
+2021-01-01,Mexico,M,32
+2021-01-01,Other,F,80
+2021-01-01,Other,M,146
+2021-02-01,El Salvador,F,152
+2021-02-01,El Salvador,M,219
+2021-02-01,Guatemala,F,432
+2021-02-01,Guatemala,M,1212
+2021-02-01,Honduras,F,358
+2021-02-01,Honduras,M,681
+2021-02-01,Mexico,F,23
+2021-02-01,Mexico,M,40
+2021-02-01,Other,F,117
+2021-02-01,Other,M,169
+2021-03-01,El Salvador,F,250
+2021-03-01,El Salvador,M,465
+2021-03-01,Guatemala,F,877
+2021-03-01,Guatemala,M,2361
+2021-03-01,Honduras,F,788
+2021-03-01,Honduras,M,1419
+2021-03-01,Mexico,F,32
+2021-03-01,Mexico,M,56
+2021-03-01,Other,F,135
+2021-03-01,Other,M,182
+2021-04-01,El Salvador,F,434
+2021-04-01,El Salvador,M,680
+2021-04-01,Guatemala,F,1317
+2021-04-01,Guatemala,M,3429
+2021-04-01,Honduras,F,1408
+2021-04-01,Honduras,M,2477
+2021-04-01,Mexico,F,47
+2021-04-01,Mexico,M,80
+2021-04-01,Other,F,179
+2021-04-01,Other,M,266
+2021-05-01,El Salvador,F,849
+2021-05-01,El Salvador,M,1371
+2021-05-01,Guatemala,F,2253
+2021-05-01,Guatemala,M,5490
+2021-05-01,Honduras,F,2233
+2021-05-01,Honduras,M,3731
+2021-05-01,Mexico,F,84
+2021-05-01,Mexico,M,80
+2021-05-01,Other,F,364
+2021-05-01,Other,M,508
+2021-06-01,El Salvador,F,776
+2021-06-01,El Salvador,M,1300
+2021-06-01,Guatemala,F,1902
+2021-06-01,Guatemala,M,5123
+2021-06-01,Honduras,F,1690
+2021-06-01,Honduras,M,3081
+2021-06-01,Mexico,F,81
+2021-06-01,Mexico,M,95
+2021-06-01,Other,F,303
+2021-06-01,Other,M,554
+2021-07-01,El Salvador,F,793
+2021-07-01,El Salvador,M,1285
+2021-07-01,Guatemala,F,2167
+2021-07-01,Guatemala,M,5395
+2021-07-01,Honduras,F,1895
+2021-07-01,Honduras,M,3275
+2021-07-01,Mexico,F,84
+2021-07-01,Mexico,M,124
+2021-07-01,Other,F,374
+2021-07-01,Other,M,565
+2021-08-01,El Salvador,F,892
+2021-08-01,El Salvador,M,1290
+2021-08-01,Guatemala,F,2555
+2021-08-01,Guatemala,M,5590
+2021-08-01,Honduras,F,2154
+2021-08-01,Honduras,M,3457
+2021-08-01,Mexico,F,110
+2021-08-01,Mexico,M,126
+2021-08-01,Other,F,444
+2021-08-01,Other,M,689
+2021-09-01,El Salvador,F,855
+2021-09-01,El Salvador,M,1207
+2021-09-01,Guatemala,F,2229
+2021-09-01,Guatemala,M,4956
+2021-09-01,Honduras,F,1835
+2021-09-01,Honduras,M,2898
+2021-09-01,Mexico,F,89
+2021-09-01,Mexico,M,134
+2021-09-01,Other,F,552
+2021-09-01,Other,M,956
+2021-10-01,El Salvador,F,686
+2021-10-01,El Salvador,M,1054
+2021-10-01,Guatemala,F,1674
+2021-10-01,Guatemala,M,3861
+2021-10-01,Honduras,F,1387
+2021-10-01,Honduras,M,2218
+2021-10-01,Mexico,F,81
+2021-10-01,Mexico,M,113
+2021-10-01,Other,F,325
+2021-10-01,Other,M,665
+2021-11-01,El Salvador,F,636
+2021-11-01,El Salvador,M,870
+2021-11-01,Guatemala,F,1489
+2021-11-01,Guatemala,M,3379
+2021-11-01,Honduras,F,1129
+2021-11-01,Honduras,M,1749
+2021-11-01,Mexico,F,82
+2021-11-01,Mexico,M,111
+2021-11-01,Other,F,224
+2021-11-01,Other,M,346
+2021-12-01,El Salvador,F,773
+2021-12-01,El Salvador,M,1121
+2021-12-01,Guatemala,F,2110
+2021-12-01,Guatemala,M,4419
+2021-12-01,Honduras,F,1461
+2021-12-01,Honduras,M,2154
+2021-12-01,Mexico,F,116
+2021-12-01,Mexico,M,129
+2021-12-01,Other,F,304
+2021-12-01,Other,M,471
+2022-01-01,El Salvador,F,398
+2022-01-01,El Salvador,M,563
+2022-01-01,Guatemala,F,1212
+2022-01-01,Guatemala,M,2707
+2022-01-01,Honduras,F,770
+2022-01-01,Honduras,M,1098
+2022-01-01,Mexico,F,67
+2022-01-01,Mexico,M,102
+2022-01-01,Other,F,244
+2022-01-01,Other,M,391
+2022-02-01,El Salvador,F,479
+2022-02-01,El Salvador,M,719
+2022-02-01,Guatemala,F,1395
+2022-02-01,Guatemala,M,2724
+2022-02-01,Honduras,F,971
+2022-02-01,Honduras,M,1444
+2022-02-01,Mexico,F,80
+2022-02-01,Mexico,M,85
+2022-02-01,Other,F,263
+2022-02-01,Other,M,363
+2022-03-01,El Salvador,F,502
+2022-03-01,El Salvador,M,771
+2022-03-01,Guatemala,F,1648
+2022-03-01,Guatemala,M,3610
+2022-03-01,Honduras,F,1194
+2022-03-01,Honduras,M,1886
+2022-03-01,Mexico,F,106
+2022-03-01,Mexico,M,139
+2022-03-01,Other,F,250
+2022-03-01,Other,M,460
+2022-04-01,El Salvador,F,583
+2022-04-01,El Salvador,M,957
+2022-04-01,Guatemala,F,1686
+2022-04-01,Guatemala,M,3801
+2022-04-01,Honduras,F,1162
+2022-04-01,Honduras,M,2111
+2022-04-01,Mexico,F,126
+2022-04-01,Mexico,M,162
+2022-04-01,Other,F,326
+2022-04-01,Other,M,501
+2022-05-01,El Salvador,F,511
+2022-05-01,El Salvador,M,806
+2022-05-01,Guatemala,F,1597
+2022-05-01,Guatemala,M,3351
+2022-05-01,Honduras,F,1089
+2022-05-01,Honduras,M,1810
+2022-05-01,Mexico,F,109
+2022-05-01,Mexico,M,143
+2022-05-01,Other,F,354
+2022-05-01,Other,M,505
+2022-06-01,El Salvador,F,567
+2022-06-01,El Salvador,M,917
+2022-06-01,Guatemala,F,1799
+2022-06-01,Guatemala,M,3576
+2022-06-01,Honduras,F,1417
+2022-06-01,Honduras,M,2167
+2022-06-01,Mexico,F,160
+2022-06-01,Mexico,M,167
+2022-06-01,Other,F,364
+2022-06-01,Other,M,495
+2022-07-01,El Salvador,F,576
+2022-07-01,El Salvador,M,980
+2022-07-01,Guatemala,F,1988
+2022-07-01,Guatemala,M,4195
+2022-07-01,Honduras,F,1590
+2022-07-01,Honduras,M,2724
+2022-07-01,Mexico,F,128
+2022-07-01,Mexico,M,188
+2022-07-01,Other,F,325
+2022-07-01,Other,M,527
+2022-08-01,El Salvador,F,531
+2022-08-01,El Salvador,M,777
+2022-08-01,Guatemala,F,1636
+2022-08-01,Guatemala,M,3252
+2022-08-01,Honduras,F,1221
+2022-08-01,Honduras,M,2137
+2022-08-01,Mexico,F,160
+2022-08-01,Mexico,M,178
+2022-08-01,Other,F,356
+2022-08-01,Other,M,528
+2022-09-01,El Salvador,F,426
+2022-09-01,El Salvador,M,610
+2022-09-01,Guatemala,F,1362
+2022-09-01,Guatemala,M,2634
+2022-09-01,Honduras,F,1024
+2022-09-01,Honduras,M,1612
+2022-09-01,Mexico,F,166
+2022-09-01,Mexico,M,198
+2022-09-01,Other,F,392
+2022-09-01,Other,M,580
+2022-10-01,El Salvador,F,484
+2022-10-01,El Salvador,M,675
+2022-10-01,Guatemala,F,1501
+2022-10-01,Guatemala,M,2823
+2022-10-01,Honduras,F,1004
+2022-10-01,Honduras,M,1702
+2022-10-01,Mexico,F,171
+2022-10-01,Mexico,M,248
+2022-10-01,Other,F,502
+2022-10-01,Other,M,711
+2022-11-01,El Salvador,F,432
+2022-11-01,El Salvador,M,625
+2022-11-01,Guatemala,F,1466
+2022-11-01,Guatemala,M,2881
+2022-11-01,Honduras,F,1033
+2022-11-01,Honduras,M,1636
+2022-11-01,Mexico,F,200
+2022-11-01,Mexico,M,250
+2022-11-01,Other,F,601
+2022-11-01,Other,M,797
+2022-12-01,El Salvador,F,559
+2022-12-01,El Salvador,M,625
+2022-12-01,Guatemala,F,1976
+2022-12-01,Guatemala,M,3477
+2022-12-01,Honduras,F,1188
+2022-12-01,Honduras,M,1872
+2022-12-01,Mexico,F,239
+2022-12-01,Mexico,M,262
+2022-12-01,Other,F,811
+2022-12-01,Other,M,1054
+2023-01-01,El Salvador,F,285
+2023-01-01,El Salvador,M,404
+2023-01-01,Guatemala,F,1328
+2023-01-01,Guatemala,M,2556
+2023-01-01,Honduras,F,929
+2023-01-01,Honduras,M,1360
+2023-01-01,Mexico,F,184
+2023-01-01,Mexico,M,227
+2023-01-01,Other,F,721
+2023-01-01,Other,M,908
+2023-02-01,El Salvador,F,312
+2023-02-01,El Salvador,M,500
+2023-02-01,Guatemala,F,1358
+2023-02-01,Guatemala,M,2597
+2023-02-01,Honduras,F,933
+2023-02-01,Honduras,M,1424
+2023-02-01,Mexico,F,234
+2023-02-01,Mexico,M,312
+2023-02-01,Other,F,357
+2023-02-01,Other,M,457
+2023-03-01,El Salvador,F,394
+2023-03-01,El Salvador,M,507
+2023-03-01,Guatemala,F,1438
+2023-03-01,Guatemala,M,2813
+2023-03-01,Honduras,F,1094
+2023-03-01,Honduras,M,1730
+2023-03-01,Mexico,F,277
+2023-03-01,Mexico,M,379
+2023-03-01,Other,F,372
+2023-03-01,Other,M,535
+2023-04-01,El Salvador,F,358
+2023-04-01,El Salvador,M,531
+2023-04-01,Guatemala,F,1271
+2023-04-01,Guatemala,M,2549
+2023-04-01,Honduras,F,1078
+2023-04-01,Honduras,M,1621
+2023-04-01,Mexico,F,266
+2023-04-01,Mexico,M,374
+2023-04-01,Other,F,323
+2023-04-01,Other,M,600
+2023-05-01,El Salvador,F,343
+2023-05-01,El Salvador,M,499
+2023-05-01,Guatemala,F,1172
+2023-05-01,Guatemala,M,2129
+2023-05-01,Honduras,F,961
+2023-05-01,Honduras,M,1548
+2023-05-01,Mexico,F,266
+2023-05-01,Mexico,M,383
+2023-05-01,Other,F,463
+2023-05-01,Other,M,694

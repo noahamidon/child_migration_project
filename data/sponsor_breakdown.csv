@@ -1,0 +1,54 @@
+sponsor_cat,sponsor_relation,n
+1,Mother,134967
+1,Father,95692
+1,Legal Guardian,143
+1,Qualified Step-Parents,8
+1,Stepfather Legally Adopted,7
+2,Brother,57075
+2,Sister,34946
+2,Uncle,32626
+2,Uncle (Non-Primary Caregiver),29547
+2,Aunt,25735
+2,Aunt (Non-Primary Caregiver),24554
+2,Adult First Cousin (Non-Primary Caregiver),16107
+2,Adult First Cousin,15267
+2,Half-Sibling,8471
+2,Grandmother,6321
+2,Grandfather,2994
+2,Brother-in-law,953
+2,Brother-in-law (Non-Primary Caregiver),528
+2,Sister-in-law,483
+2,Aunt (Primary Caregiver),378
+2,Uncle (Primary Caregiver),297
+2,Step Father,217
+2,Adult First Cousin (Primary Caregiver),184
+2,Adult Nephew (Non-Primary Caregiver),173
+2,Sister-in-law (Non-Primary Caregiver),172
+2,Adult Nephew,147
+2,Step Mother,146
+2,Stepfather Non-Lgl Adopt. (Non-Primary Caregiver),142
+2,UC's Spouse,130
+2,Adult Niece (Non-Primary Caregiver),123
+2,Adult Niece,93
+2,Stepfather Non-Lgl Adopted (Primary Caregiver),88
+2,Stepbrother,86
+2,Stepsister,80
+2,Stepmother Non-Lgl Adopt. (Non-Primary Caregiver),41
+2,Brother-in-law (Primary Caregiver),22
+2,Stepmother Non-Lgl Adopted (Primary Caregiver),15
+2,Sister-in-law (Primary Caregiver),12
+2,Half-Sibling (Non-Primary Caregiver),7
+2,Adult Niece (Primary Caregiver),3
+2,Adult Nephew (Primary Caregiver),2
+3,Unrelated Sponsor,37088
+3,Other Distant Relative,25670
+3,Godmother,434
+3,Godfather,301
+3,Other Cousin,190
+3,Institutional/Organizational Sponsor,1
+NA,Family Friend,410
+NA,First Cousin,233
+NA,Nephew,6
+NA,Unknown,5
+NA,Niece,1
+NA,Parent’s Partner,1

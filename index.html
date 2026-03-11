@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alone in America</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <!-- Scrollama removed — using native IntersectionObserver -->
+</head>
+<body>
+
+    <!-- ═══ SECTION 0: HERO ═══ -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-eyebrow">An exploration of HHS data, 2015–2023</p>
+            <h1 class="hero-title">Alone in America</h1>
+            <p class="hero-subtitle">
+                More than half a million children crossed the U.S. border without a parent.
+                Where did they end up? And with whom?
+            </p>
+            <div class="scroll-cue">
+                <span>Scroll to begin</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 1: CONTEXT TEXT ═══ -->
+    <section id="intro" class="text-section">
+        <div class="text-block narrow">
+            <h2>The Data</h2>
+            <p>
+                In 2023, <em>The New York Times</em> obtained records on every
+                unaccompanied child migrant released by the Office of Refugee
+                Resettlement between January 2015 and May 2023 representing more than
+                550,000 children.
+            </p>
+            <p>
+                The records reveal where each child came from, how long they
+                were held, who claimed them, and the ZIP code where they were
+                sent to live.
+            </p>
+            <p>What follows is a visual journey through that data.</p>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 2: BEESWARM SCROLLY ═══ -->
+    <section id="beeswarm-scrolly" class="scrolly-section">
+        <div class="sticky-viz" id="beeswarm-sticky">
+            <svg id="beeswarm-svg"></svg>
+        </div>
+        <div class="scroll-steps" id="beeswarm-steps">
+            <div class="step" data-step="ca-wide">
+                <div class="step-card">
+                    <h3>The Journey Begins</h3>
+                    <p>
+                        Hundreds of thousands of unaccompanied children made the
+                        journey north from countries across Central America and
+                        <span class="country-mexico">Mexico</span> — fleeing poverty, gang violence, and family
+                        separation.
+                    </p>
+                    <p class="step-note">Each dot ≈ 100 children.</p>
+                </div>
+            </div>
+            <div class="step" data-step="origin-cluster">
+                <div class="step-card">
+                    <h3>The Northern Triangle</h3>
+                    <p>
+                        The vast majority came from just three countries:
+                        <span class="country-honduras">Honduras</span>, <span class="country-guatemala">Guatemala</span>, and <span class="country-elsalvador">El Salvador</span> — together known as
+                        the Northern Triangle.
+                    </p>
+                </div>
+            </div>
+            <div class="step" data-step="origin-split">
+                <div class="step-card">
+                    <h3>Origins</h3>
+                    <p>
+                        <span class="country-guatemala">Guatemala</span> sent the most children, followed closely by
+                        <span class="country-honduras">Honduras</span>. <span class="country-elsalvador">El Salvador</span> accounts for most of the rest.
+                    </p>
+                    <p>
+                        <span class="country-mexico">Mexico</span> — the center of so much political rhetoric about
+                        border crossings — accounts for one of the
+                        <em>smallest</em> shares. The crisis was overwhelmingly
+                        a Central American one, not a Mexican one.
+                    </p>
+                </div>
+            </div>
+            <div class="step" data-step="journey">
+                <div class="step-card">
+                    <h3>The Journey North</h3>
+                    <p>
+                        After crossing the border and entering government
+                        custody, children were processed and eventually released
+                        to sponsors across the United States.
+                    </p>
+                </div>
+            </div>
+            <div class="step align-right" data-step="us-landing">
+                <div class="step-card">
+                    <h3>Where They Landed</h3>
+                    <p>
+                        Children were placed in communities in all 50 states,
+                        but releases were heavily concentrated in a handful of
+                        metro areas.
+                    </p>
+                </div>
+            </div>
+            <div class="step align-right" data-step="sponsor-type">
+                <div class="step-card">
+                    <h3>Who Took Them In?</h3>
+                    <p>
+                        Sponsors ranged from <span class="cat-1">parents and guardians</span>
+                        to <span class="cat-2">relatives</span> to
+                        <span class="cat-3">unrelated adults</span>. That third group
+                        grew the most over time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 3: TIMELINE TEXT ═══ -->
+    <section id="timeline-context" class="text-section">
+        <div class="text-block narrow">
+            <h2>Waves</h2>
+            <p>
+                The flow of children was not constant. Policy shifts, crises in
+                Central America, and the COVID-19 pandemic created dramatic
+                surges and drops.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 4: TIMELINE SCROLLY ═══ -->
+    <section id="timeline-scrolly" class="scrolly-section">
+        <div class="sticky-viz" id="timeline-sticky">
+            <svg id="timeline-svg"></svg>
+        </div>
+        <div class="scroll-steps" id="timeline-steps">
+            <div class="step" data-step="timeline-density">
+                <div class="step-card">
+                    <h3>Eight Years of Arrivals</h3>
+                    <p>Monthly releases from January 2015 through May 2023, colored by country of origin.</p>
+                    <p>Despite dominating U.S. political rhetoric, <span class="cat-mx">Mexico</span> accounts for a strikingly small slice. This was overwhelmingly a crisis rooted in Central America — not Mexico.</p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-all">
+                <div class="step-card">
+                    <h3>The Full Picture</h3>
+                    <p>Stacked together, the cumulative wave of arrivals — and the outsized role of Guatemala and Honduras — comes into focus.</p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-2019-surge">
+                <div class="step-card">
+                    <h3>The 2019 Surge</h3>
+                    <p>A humanitarian crisis at the border pushed monthly arrivals to record levels in mid-2019.</p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-covid">
+                <div class="step-card">
+                    <h3>COVID Shutdown</h3>
+                    <p>
+                        In March 2020, the Trump administration invoked
+                        <em>Title 42</em> — a public health statute — to
+                        rapidly expel migrants at the border without the
+                        asylum process normally required by law. Unaccompanied
+                        children were largely exempt, but widespread border
+                        closures and processing shutdowns caused releases to
+                        plummet anyway.
+                    </p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-2021-spike">
+                <div class="step-card">
+                    <h3>The 2021 Spike</h3>
+                    <p>As restrictions eased, releases surged past all previous records, peaking in late 2021 and early 2022.</p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-gender">
+                <div class="step-card">
+                    <h3>Who Was Coming?</h3>
+                    <p>Roughly two-thirds of unaccompanied children were boys. But the gender ratio shifted over time.</p>
+                </div>
+            </div>
+            <div class="step" data-step="timeline-gender-prop">
+                <div class="step-card">
+                    <h3>A Shifting Balance</h3>
+                    <p>Shown as proportions, the growing share of girls over time becomes clear — especially after the 2021 surge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 5: SPONSOR TEXT ═══ -->
+    <section id="sponsor-context" class="text-section">
+        <div class="text-block narrow">
+            <h2>The Sponsors</h2>
+            <p>
+                Every released child is matched with a sponsor — someone who
+                agrees to care for them. But the data raises questions about
+                the nature of these arrangements.
+            </p>
+            <p>
+                The sponsor categories reveal a gradient from close family
+                to strangers: parents, siblings, aunts and uncles, family
+                friends, and unrelated adults.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 6: SPONSOR SCROLLY ═══ -->
+    <section id="sponsor-scrolly" class="scrolly-section">
+        <div class="sticky-viz" id="sponsor-sticky">
+            <svg id="sponsor-svg"></svg>
+        </div>
+        <div class="scroll-steps" id="sponsor-steps">
+            <div class="step" data-step="sponsor-overall">
+                <div class="step-card">
+                    <h3>Overall Breakdown</h3>
+                    <p>The majority of children were released to <span class="cat-1">Parent/Guardian</span> sponsors, but a meaningful share went to <span class="cat-2">Relative</span> and <span class="cat-3">Non-relative</span> sponsors.</p>
+                </div>
+            </div>
+            <div class="step" data-step="sponsor-by-country">
+                <div class="step-card">
+                    <h3>Patterns by Origin</h3>
+                    <p>Children from Guatemala were more likely to be released to non-parent sponsors than those from Honduras.</p>
+                </div>
+            </div>
+            <div class="step" data-step="sponsor-trend">
+                <div class="step-card">
+                    <h3>A Shifting Landscape</h3>
+                    <p>Over time, the share of <span class="cat-3">non-relative</span> sponsors grew. This is one of the patterns that raised alarms.</p>
+                </div>
+            </div>
+            <div class="step" data-step="sponsor-gender">
+                <div class="step-card">
+                    <h3>Gender Differences</h3>
+                    <p>Boys were more likely than girls to be released to <span class="cat-3">non-relative sponsors</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 7: MAP TEXT ═══ -->
+    <section id="map-context" class="text-section">
+        <div class="text-block narrow">
+            <h2>Across Every State</h2>
+            <p>
+                The ZIP codes in the data paint a picture of where children
+                ended up. Some areas received thousands; many received none.
+                Explore the map below to see the geography of placement.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 8: INTERACTIVE MAP ═══ -->
+    <section id="interactive-map" class="interactive-section">
+        <div class="map-controls">
+            <div class="control-group">
+                <label>Country of Origin</label>
+                <select id="filter-country">
+                    <option value="all">All Countries</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Year</label>
+                <select id="filter-year">
+                    <option value="all">All Years</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Sponsor Category</label>
+                <select id="filter-sponsor">
+                    <option value="all">All Categories</option>
+                    <option value="1" style="color:#3d6e4e;font-weight:600">Parent/Guardian</option>
+                    <option value="2" style="color:#9e862f;font-weight:600">Relative</option>
+                    <option value="3" style="color:#943c3c;font-weight:600">Non-relative</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Gender</label>
+                <select id="filter-gender">
+                    <option value="all">All</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="map-viz-wrapper">
+            <div id="us-map-container">
+                <svg id="us-map-svg"></svg>
+                <div id="map-tooltip" class="tooltip"></div>
+            </div>
+            <div id="map-sidebar">
+                <div id="map-stats"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 9: CLOSING ═══ -->
+    <section id="closing" class="text-section">
+        <div class="text-block narrow">
+            <h2>What the Numbers Don't Show</h2>
+            <p>
+                Behind every row in this dataset is a child who made one of the
+                most dangerous journeys in the world. The data tells us where
+                they ended up, but not what happened next.
+            </p>
+            <p>
+                Investigations by <em>The New York Times</em> found that many
+                of these children were put to work in dangerous conditions:
+                on overnight shifts, on rooftops, in slaughterhouses; often
+                with sponsors who were not family at all.
+            </p>
+            <p class="closing-note">
+                This project uses anonymized data obtained through a Freedom
+                of Information Act request. No individual children can be
+                identified from this visualization.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="citations-footer">
+        <div class="text-block narrow">
+            <p class="citations">
+                Data: U.S. Department of Health and Human Services, obtained by
+                <em>The New York Times</em> via FOIA.
+                Covers January 2015 – May 2023. &nbsp;|&nbsp;
+                Design and development: Noah Amidon
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/migration.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/sponsors.js"></script>
+    <script src="js/us_map.js"></script>
+    <script src="js/scrolly.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

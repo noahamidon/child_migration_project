@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f7f5f2;
+    color: #2c2c2c;
+}
+
+/* ── HERO ── */
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 300;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+}
+
+.scroll-cue {
+    margin-top: 60px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 20px;
+    margin: 12px auto 0;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: rotate(45deg) translateY(0); }
+    50%      { transform: rotate(45deg) translateY(8px); }
+}
+
+/* ── TEXT SECTIONS ── */
+
+.text-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+#map-context {
+    min-height: 40vh;
+    padding: 54px 20px;
+}
+
+.text-block {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.text-block.narrow {
+    max-width: 540px;
+}
+
+.text-block h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.text-block p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.text-block p em {
+    font-style: italic;
+    color: #2c2c2c;
+}
+
+/* ── CATEGORY COLOR HIGHLIGHTS ── */
+.cat-1 { color: #3d6e4e; font-weight: 600; }
+.cat-2 { color: #9e862f; font-weight: 600; }
+.cat-3 { color: #943c3c; font-weight: 600; }
+.country-guatemala  { color: #943c3c; font-weight: 600; }
+.country-honduras   { color: #b07348; font-weight: 600; }
+.country-elsalvador { color: #9e862f; font-weight: 600; }
+.country-mexico     { color: #3d6e4e; font-weight: 600; }
+
+.closing-note {
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #d4cec4;
+    padding-top: 16px;
+    margin-top: 24px;
+}
+
+/* ── SCROLLY SECTIONS ── */
+
+.scrolly-section {
+    position: relative;
+}
+
+.sticky-viz {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #f7f5f2;
+}
+
+.sticky-viz svg {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-steps {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.step {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.step:last-child {
+    margin-bottom: 40vh;
+}
+
+.step-card {
+    background-color: rgba(247, 245, 242, 0.95);
+    border: 1px solid #d4cec4;
+    border-radius: 10px;
+    padding: 28px 32px;
+    max-width: 360px;
+    pointer-events: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.step-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.step-card p {
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.step-card .step-note {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 8px;
+}
+
+.step.is-active .step-card {
+    border-color: #943c3c;
+}
+
+/* Right-aligned step cards for visual variety */
+.step.align-right {
+    justify-content: flex-end;
+}
+
+/* ── BUBBLE ANIMATION (CSS-driven so scroll doesn't throttle it) ── */
+
+@keyframes bubble-grow {
+    from { r: 0; }
+    to   { r: var(--bubble-r); }
+}
+
+@keyframes bubble-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.09); }
+}
+
+circle.bubble {
+    r: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation:
+        bubble-grow  700ms ease-out     forwards,
+        bubble-pulse 2.8s  ease-in-out  infinite;
+    animation-delay:
+        var(--bubble-delay, 0ms),
+        calc(var(--bubble-delay, 0ms) + 700ms);
+}
+
+/* ── INTERACTIVE MAP ── */
+
+.interactive-section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.map-controls {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.control-group label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.control-group select {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 8px 12px;
+    background-color: #edeae5;
+    color: #2c2c2c;
+    border: 1px solid #c8c2b8;
+    border-radius: 6px;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+.control-group select:focus {
+    outline: none;
+    border-color: #943c3c;
+}
+
+.map-viz-wrapper {
+    display: flex;
+    gap: 24px;
+    height: 70vh;
+}
+
+#us-map-container {
+    flex: 3;
+    background-color: #edeae5;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#us-map-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#map-sidebar {
+    flex: 1;
+    background-color: #edeae5;
+    border-radius: 10px;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+#map-sidebar h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#map-sidebar h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+
+#map-sidebar p {
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin: 4px 0;
+}
+
+/* ── TOOLTIPS ── */
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(247, 245, 242, 0.96);
+    border: 2px solid #943c3c;
+    border-radius: 6px;
+    padding: 10px 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1000;
+    min-width: 180px;
+    max-width: 240px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    font-size: 0.85rem;
+}
+
+.tooltip h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #943c3c;
+    border-bottom: 1px solid #943c3c;
+    padding-bottom: 4px;
+}
+
+.tooltip p {
+    font-size: 0.78rem;
+    margin: 3px 0;
+    font-weight: 300;
+}
+
+/* ── FOOTER ── */
+
+.citations-footer {
+    padding: 40px 20px 60px;
+    text-align: center;
+}
+
+.citations {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #888;
+    line-height: 1.6;
+}
+
+.citations em {
+    font-style: italic;
+}
