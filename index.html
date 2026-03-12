@@ -265,11 +265,11 @@
                 <label>Country of Origin</label>
                 <select id="filter-country">
                     <option value="all">All Countries</option>
-                    <option value="Guatemala">Guatemala</option>
-                    <option value="Honduras">Honduras</option>
-                    <option value="El Salvador">El Salvador</option>
-                    <option value="Mexico">Mexico</option>
-                    <option value="Other">Other</option>
+                    <option value="Guatemala"   style="color:#943c3c;font-weight:600">Guatemala</option>
+                    <option value="Honduras"    style="color:#b07348;font-weight:600">Honduras</option>
+                    <option value="El Salvador" style="color:#9e862f;font-weight:600">El Salvador</option>
+                    <option value="Mexico"      style="color:#3d6e4e;font-weight:600">Mexico</option>
+                    <option value="Other"       style="color:#4a6180;font-weight:600">Other</option>
                 </select>
             </div>
             <div class="control-group">
@@ -294,6 +294,13 @@
                     <option value="M">Male</option>
                     <option value="F">Female</option>
                 </select>
+            </div>
+            <div class="control-group control-group--toggle">
+                <label>Scale</label>
+                <button id="toggle-percapita" class="map-toggle" data-active="false">
+                    <span class="toggle-opt active">Total</span>
+                    <span class="toggle-opt">Per 100k</span>
+                </button>
             </div>
         </div>
         <div class="map-viz-wrapper">
@@ -347,6 +354,7 @@
     <script src="js/sponsors.js"></script>
     <script src="js/us_map.js"></script>
     <script src="js/scrolly.js"></script>
+    <script src="js/custom-select.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

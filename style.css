@@ -256,24 +256,160 @@ circle.bubble {
 }
 
 .control-group label {
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #888;
+    color: #555;
 }
 
 .control-group select {
     font-family: 'Oswald', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
-    padding: 8px 12px;
-    background-color: #edeae5;
+    padding: 8px 32px 8px 12px;
+    background-color: #f2ede6;
     color: #2c2c2c;
-    border: 1px solid #c8c2b8;
-    border-radius: 6px;
+    border: 1.5px solid #b5aea5;
+    border-radius: 4px;
     cursor: pointer;
     min-width: 180px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23943c3c'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transition: border-color 0.15s;
+}
+
+.control-group select:hover {
+    border-color: #943c3c;
+}
+
+.control-group option {
+    background-color: #f2ede6;
+    color: #2c2c2c;
+}
+
+/* ── Custom select ── */
+.csel {
+    position: relative;
+    min-width: 180px;
+}
+
+.csel-trigger {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 8px 32px 8px 12px;
+    background-color: #f2ede6;
+    color: #2c2c2c;
+    border: 1.5px solid #b5aea5;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: border-color 0.15s;
+    position: relative;
+}
+
+.csel-trigger::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23943c3c'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.2s;
+    pointer-events: none;
+}
+
+.csel.open .csel-trigger {
+    border-color: #943c3c;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.csel.open .csel-trigger::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.csel-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f2ede6;
+    border: 1.5px solid #943c3c;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 200;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.csel.open .csel-list {
+    display: block;
+}
+
+.csel-opt {
+    padding: 8px 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #2c2c2c;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.csel-opt:hover {
+    background: #e8e0d5;
+}
+
+.csel-opt.selected {
+    background: #ddd4c6;
+    color: #943c3c;
+}
+
+.map-toggle {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    background: #f2ede6;
+    border: 1.5px solid #b5aea5;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+    min-width: 180px;
+    transition: border-color 0.15s;
+}
+
+.map-toggle:hover {
+    border-color: #943c3c;
+}
+
+.toggle-opt {
+    flex: 1;
+    padding: 8px 12px;
+    color: #999;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.toggle-opt.active {
+    background: #943c3c;
+    color: #fdf4e8;
 }
 
 .control-group select:focus {

@@ -132,6 +132,8 @@
             if (zipAggData.length > 0) console.log("  sample:", JSON.stringify(zipAggData[0]));
         }
 
+        initCustomSelects();
+
         if (zipDetail)
             usMap.init(statesGeo, countiesGeo, zipDetail, zipAggData);
 

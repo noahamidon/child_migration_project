@@ -13,6 +13,20 @@ const usMap = (() => {
     let width, height;
     let zoomedState = null;
     let colorScale;
+    let perCapita = false;
+
+    // 2020 Census state populations
+    const STATE_POP = {
+        AL:5024279, AK:733391, AZ:7151502, AR:3011524, CA:39538223, CO:5773714,
+        CT:3605944, DE:989948, FL:21538187, GA:10711908, HI:1455271, ID:1839106,
+        IL:12812508, IN:6785528, IA:3190369, KS:2937880, KY:4505836, LA:4657757,
+        ME:1362359, MD:6177224, MA:7029917, MI:10077331, MN:5706494, MS:2961279,
+        MO:6154913, MT:1084225, NE:1961504, NV:3104614, NH:1377529, NJ:9288994,
+        NM:2117522, NY:20201249, NC:10439388, ND:779094, OH:11799448, OK:3959353,
+        OR:4237256, PA:13002700, RI:1097379, SC:5118425, SD:886667, TN:6910840,
+        TX:29145505, UT:3271616, VT:643077, VA:8631393, WA:7705281, WV:1793716,
+        WI:5893718, WY:576851, DC:689545, PR:3285874
+    };
 
     const SN2A = {
         "Alabama":"AL","Alaska":"AK","Arizona":"AZ","Arkansas":"AR",
@@ -59,7 +73,7 @@ const usMap = (() => {
         stateG.selectAll("path.state")
             .data(stateFeatures).enter().append("path")
             .attr("class", "state").attr("d", path)
-            .attr("fill", "#f4f2ee").attr("stroke", "#c8c2b8").attr("stroke-width", 0.5)
+            .attr("fill", "#f4f2ee").attr("stroke", "#c8c2b8").attr("stroke-width", 1)
             .style("cursor", "pointer")
             .on("mouseover", onHover).on("mousemove", onMove).on("mouseout", onOut)
             .on("click", onStateClick);
@@ -73,19 +87,23 @@ const usMap = (() => {
             .attr("text-anchor", "middle").attr("fill", "#555")
             .attr("font-size", "0.75rem").text("\u2190 Back");
 
-        // Legend
+        // Legend — positioned above Michigan
         const defs = svg.append("defs");
+        const CHORO = ["#fdf4e8", "#d4714a", "#943c3c"];
         const grad = defs.append("linearGradient").attr("id", "map-grad");
-        grad.append("stop").attr("offset", "0%").attr("stop-color", d3.interpolateYlOrRd(0));
-        grad.append("stop").attr("offset", "50%").attr("stop-color", d3.interpolateYlOrRd(0.5));
-        grad.append("stop").attr("offset", "100%").attr("stop-color", d3.interpolateYlOrRd(1));
-        const lg = svg.append("g").attr("transform", `translate(${width-230},${height-45})`);
+        grad.append("stop").attr("offset", "0%").attr("stop-color", CHORO[0]);
+        grad.append("stop").attr("offset", "50%").attr("stop-color", CHORO[1]);
+        grad.append("stop").attr("offset", "100%").attr("stop-color", CHORO[2]);
+        const miPt = projection([-84.5, 47.5]);
+        const lgX = miPt ? miPt[0] - 100 : width - 230;
+        const lgY = miPt ? miPt[1] - 55 : height - 45;
+        const lg = svg.append("g").attr("transform", `translate(${lgX},${lgY})`);
         lg.append("rect").attr("width", 200).attr("height", 12).attr("rx", 3).attr("fill", "url(#map-grad)");
-        lg.append("text").attr("x", 0).attr("y", 26).attr("fill", "#888").attr("font-size", "0.7rem").text("0");
+        lg.append("text").attr("x", 0).attr("y", 26).attr("fill", "#444").attr("font-size", "0.7rem").text("0");
         lg.append("text").attr("class", "legend-max").attr("x", 200).attr("y", 26)
-            .attr("text-anchor", "end").attr("fill", "#888").attr("font-size", "0.7rem");
-        lg.append("text").attr("x", 100).attr("y", -6).attr("text-anchor", "middle")
-            .attr("fill", "#888").attr("font-size", "0.7rem").text("Children placed");
+            .attr("text-anchor", "end").attr("fill", "#444").attr("font-size", "0.7rem");
+        lg.append("text").attr("class", "legend-label").attr("x", 100).attr("y", -6).attr("text-anchor", "middle")
+            .attr("fill", "#444").attr("font-size", "0.7rem").text("Children placed");
 
         updateMap({});
 
@@ -100,6 +118,16 @@ const usMap = (() => {
             el.addEventListener("wheel", e => {
                 if (document.activeElement !== el) e.preventDefault();
             }, { passive: false });
+        });
+
+        document.getElementById("toggle-percapita").addEventListener("click", function() {
+            perCapita = !perCapita;
+            this.dataset.active = perCapita;
+            this.querySelectorAll(".toggle-opt").forEach((el, i) => {
+                el.classList.toggle("active", perCapita ? i === 1 : i === 0);
+            });
+            if (zoomedState) zoomOut();
+            updateMap(getFilters());
         });
 
         console.log("  us map:", rawData.length, "detail,", zipAgg.length, "zip agg");
@@ -123,18 +151,29 @@ const usMap = (() => {
         return d;
     }
 
+    function stateValue(abbr, rawCount) {
+        if (!perCapita) return rawCount;
+        const pop = STATE_POP[abbr];
+        return pop ? (rawCount / pop) * 100000 : 0;
+    }
+
     function updateMap(f) {
         const filtered = filterData(f);
         const byState = d3.rollup(filtered, v => d3.sum(v, r => r.n), r => r.state);
-        const mx = d3.max([...byState.values()]) || 1;
-        colorScale = d3.scaleSequential(d3.interpolateYlOrRd).domain([0, mx]);
-        svg.select(".legend-max").text(d3.format(",")(mx));
+        const scaledValues = [...byState.entries()].map(([a, n]) => stateValue(a, n));
+        const mx = d3.max(scaledValues) || 1;
+        colorScale = d3.scaleLinear().domain([0, mx / 2, mx])
+            .range(["#fdf4e8", "#d4714a", "#943c3c"]).interpolate(d3.interpolateRgb);
+        svg.select(".legend-max").text(perCapita ? d3.format(".1f")(mx) : d3.format(",")(mx));
+        svg.select(".legend-label").text(perCapita ? "Per 100k residents" : "Children placed");
 
-        stateG.selectAll("path.state").transition().duration(600)
+        stateG.selectAll("path.state").transition("fill").duration(600)
             .attr("fill", function(d) {
                 const a = abbrOf(d);
-                const v = byState.get(a) || 0;
+                const raw = byState.get(a) || 0;
+                const v = stateValue(a, raw);
                 this.__val = v; this.__abbr = a; this.__name = d.properties.name || a;
+                this.__raw = raw;
                 return v > 0 ? colorScale(v) : "#f4f2ee";
             });
 
@@ -171,17 +210,18 @@ const usMap = (() => {
 
         g.transition().duration(750).attr("transform", `translate(${tx},${ty}) scale(${scale})`);
 
-        // Neighboring states: faintly visible. Selected state: outline only.
-        stateG.selectAll("path.state").transition().duration(600)
+        // Neighboring states: keep choropleth color, slightly dimmed. Selected state: outline only.
+        stateG.selectAll("path.state").transition("fill").duration(600)
             .attr("fill", function(d) {
                 const a = abbrOf(d);
-                if (a === stAbbr) return "#f7f5f2";  // match page bg so it's "empty"
-                return "#f4f2ee";
+                if (a === stAbbr) return "#f7f5f2";
+                const v = this.__val || 0;
+                return v > 0 ? colorScale(v) : "#f4f2ee";
             })
             .attr("opacity", function(d) {
                 const a = abbrOf(d);
                 if (a === stAbbr) return 1;
-                return 0.6;
+                return 0.75;
             })
             .attr("stroke", function(d) {
                 const a = abbrOf(d);
@@ -189,7 +229,7 @@ const usMap = (() => {
             })
             .attr("stroke-width", function(d) {
                 const a = abbrOf(d);
-                return a === stAbbr ? 1.5 / scale : 0.8 / scale;
+                return a === stAbbr ? 2.5 / scale : 1.8 / scale;
             });
 
         showZipDots(stAbbr, scale);
@@ -253,7 +293,7 @@ const usMap = (() => {
             })
             .on("mousemove", function(event) {
                 const [mx, my] = d3.pointer(event, svg.node());
-                tooltip.style("left", (mx + 15) + "px").style("top", (my - 10) + "px");
+                positionTooltip(mx, my);
             })
             .on("mouseout", function() {
                 tooltip.style("opacity", 0);
@@ -267,8 +307,8 @@ const usMap = (() => {
         zoomedState = null;
         g.transition().duration(750).attr("transform", "");
 
-        stateG.selectAll("path.state").transition().duration(600)
-            .attr("opacity", 1).attr("stroke", "#c8c2b8").attr("stroke-width", 0.5);
+        stateG.selectAll("path.state").transition("style").duration(600)
+            .attr("opacity", 1).attr("stroke", "#c8c2b8").attr("stroke-width", 1);
 
         updateMap(getFilters());
 
@@ -282,19 +322,30 @@ const usMap = (() => {
         if (zoomedState) return;
         const name = this.__name || abbrOf(d);
         const val = this.__val || 0;
-        tooltip.html(`<h3>${name}</h3><p>${d3.format(",")(val)} children</p>`)
+        const rawVal = this.__raw != null ? this.__raw : val;
+        const dispVal = perCapita && STATE_POP[this.__abbr]
+            ? `${d3.format(".1f")(stateValue(this.__abbr, rawVal))} per 100k (${d3.format(",")(rawVal)} total)`
+            : `${d3.format(",")(rawVal)} children`;
+        tooltip.html(`<h3>${name}</h3><p>${dispVal}</p>`)
             .style("opacity", 1);
-        d3.select(this).attr("stroke", "#2c2c2c").attr("stroke-width", 1.5);
+        d3.select(this).attr("stroke", "#2c2c2c").attr("stroke-width", 1);
+    }
+
+    function positionTooltip(mx, my) {
+        const ttWidth = tooltip.node().offsetWidth || 160;
+        const east = mx > width * 0.75;
+        tooltip.style("left", east ? (mx - ttWidth - 15) + "px" : (mx + 15) + "px")
+               .style("top", (my - 10) + "px");
     }
 
     function onMove(event) {
         const [mx, my] = d3.pointer(event, svg.node());
-        tooltip.style("left", (mx + 15) + "px").style("top", (my - 10) + "px");
+        positionTooltip(mx, my);
     }
 
     function onOut() {
         tooltip.style("opacity", 0);
-        if (!zoomedState) d3.select(this).attr("stroke", "#c8c2b8").attr("stroke-width", 0.5);
+        if (!zoomedState) d3.select(this).attr("stroke", "#c8c2b8").attr("stroke-width", 1);
     }
 
     return { init, updateMap };
