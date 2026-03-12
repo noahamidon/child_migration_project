@@ -293,18 +293,24 @@ const migration = (() => {
             setTimeout(startDrift, 1600);
         }
         else if (stepId === "journey") {
-            stopDrift();
+            _driftActive = false;
             resetZoom();
-            circles.transition("dots")
-                .duration(2000).delay(d => d._delay).ease(d3.easeCubicInOut)
-                .attr("cx", d => d.mX).attr("cy", d => d.mY).attr("r", 1.1).attr("opacity", 0.45);
+            setTimeout(() => {
+                dotG.selectAll("circle").interrupt("drift");
+                dotG.selectAll("circle").transition("dots")
+                    .duration(2000).delay(d => d._delay).ease(d3.easeCubicInOut)
+                    .attr("cx", d => d.mX).attr("cy", d => d.mY).attr("r", 1.1).attr("opacity", 0.45);
+            }, 1100);
         }
         else if (stepId === "us-landing") {
-            stopDrift();
+            _driftActive = false;
             zoomToGeo(-96, 38, 1.4);
-            circles.transition("dots")
-                .duration(2500).delay(d => d._delay).ease(d3.easeCubicInOut)
-                .attr("cx", d => d.dX).attr("cy", d => d.dY).attr("r", 1.1).attr("opacity", 0.45);
+            setTimeout(() => {
+                dotG.selectAll("circle").interrupt("drift");
+                dotG.selectAll("circle").transition("dots")
+                    .duration(2500).delay(d => d._delay).ease(d3.easeCubicInOut)
+                    .attr("cx", d => d.dX).attr("cy", d => d.dY).attr("r", 1.1).attr("opacity", 0.45);
+            }, 1100);
         }
         else if (stepId === "sponsor-type") {
             stopDrift();

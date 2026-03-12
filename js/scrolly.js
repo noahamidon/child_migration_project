@@ -6,16 +6,6 @@
 
 const scrolly = {
     init() {
-        // Debug panel (top-right corner) — shows which step is active
-        const debug = document.createElement("div");
-        debug.id = "scroll-debug";
-        debug.style.cssText = "display:none" +
-            "background:rgba(255,255,255,0.92);color:#943c3c;padding:8px 14px;" +
-            "font-family:monospace;font-size:12px;border-radius:6px;" +
-            "pointer-events:none;max-width:250px;line-height:1.6;";
-        debug.textContent = "scroll debug: waiting…";
-        document.body.appendChild(debug);
-
         const handlers = {
             // Migration map steps
             "ca-wide":        migration.onStep,
@@ -42,12 +32,8 @@ const scrolly = {
         // Observe ALL .step elements
         const steps = document.querySelectorAll(".step");
         console.log("scrolly: found", steps.length, "steps");
-        debug.textContent = "steps found: " + steps.length;
 
-        if (steps.length === 0) {
-            debug.textContent = "ERROR: no .step elements found!";
-            return;
-        }
+        if (steps.length === 0) return;
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -61,20 +47,14 @@ const scrolly = {
                 steps.forEach(s => s.classList.remove("is-active"));
                 el.classList.add("is-active");
 
-                // Update debug panel
-                debug.innerHTML = "<b>Active:</b> " + stepId;
-
                 // Dispatch to handler
                 const handler = handlers[stepId];
                 if (handler) {
                     try {
                         handler(stepId);
                     } catch (err) {
-                        debug.innerHTML += "<br><span style='color:red'>ERROR: " + err.message + "</span>";
                         console.error("Step handler error for", stepId, err);
                     }
-                } else {
-                    debug.innerHTML += "<br><span style='color:orange'>no handler!</span>";
                 }
             });
         }, {
