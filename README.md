@@ -57,22 +57,22 @@ Raw data was cleaned and aggregated using R (`data/cleaning.R`) into pre-process
 
 ## Project Structure
 
-├── index.html              # Main scrollytelling page
-├── style.css               # All styling
+```
+├── index.html                      # Main scrollytelling page
+├── style.css                       # All styling
 ├── js/
-│   ├── main.js             # Data loading and module initialization
-│   ├── migration.js        # Beeswarm dot migration animation
-│   ├── timeline.js         # Stacked area timeline chart
-│   ├── sponsors.js         # Sponsor category visualizations
-│   ├── us_map.js           # Choropleth + ZIP bubble map
-│   ├── scrolly.js          # Scroll-triggered step detection
-│   └── custom-select.js    # Custom dropdown filters
+│   ├── main.js                     # Data loading and module initialization
+│   ├── migration.js                # Beeswarm dot migration animation
+│   ├── timeline.js                 # Stacked area timeline chart
+│   ├── sponsors.js                 # Sponsor category visualizations
+│   ├── us_map.js                   # Choropleth + ZIP bubble map
+│   ├── scrolly.js                  # Scroll-triggered step detection
+│   └── custom-select.js            # Custom dropdown filters
 └── data/
-├── migrant_kids_data.csv       # Raw dataset (553K rows, ~30MB)
-├── cleaning.R                  # R cleaning script
-└── processed/                  # Pre-aggregated CSVs for visualization
-
-
+    ├── migrant_kids_data.csv       # Raw dataset (553K rows, ~30MB)
+    ├── cleaning.R                  # R cleaning script
+    └── processed/                  # Pre-aggregated CSVs for visualization
+```
 
 ---
 
@@ -86,16 +86,20 @@ python3 -m http.server 8000
 
 # Node
 npx serve .
-Then open http://localhost:8000 in your browser.
+```
 
-Note: D3 loads CSV files via fetch, so a local server is required (opening index.html directly will not work).
+Then open `http://localhost:8000` in your browser.
 
-Credits
-Data: The New York Times / U.S. HHS Office of Refugee Resettlement
-Project by Noah Amidon for QSS 19, Dartmouth College
-Inspired by NYT reporting on child migrant labor exploitation
-Behind every row is a child.
-
-
+> **Note:** D3 loads CSV files via `fetch`, so a local server is required — opening `index.html` directly will not work.
 
 ---
+
+## Credits
+
+- Data: *The New York Times* / U.S. HHS Office of Refugee Resettlement
+- Project by Noah Amidon for QSS 19, Dartmouth College
+- Inspired by NYT reporting on child migrant labor exploitation
+
+---
+
+*Behind every row is a child.*
